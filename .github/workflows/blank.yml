@@ -37,6 +37,8 @@ jobs:
           echo test, and deploy your project.
       - name: Setup Python
         run: actions/setup-python@v5
+        with:
+          python-verson : 3.11
 
       - name: Run Python Script
         run: |
