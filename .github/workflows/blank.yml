@@ -33,4 +33,24 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
+          
           echo test, and deploy your project.
+      - name: Setup Python
+        run: actions/setup-python@v5
+        with:
+          python-verson : 3.11
+
+      - name: Run Python Script
+        run: |
+          echo hello_world.py
+          python hello_world.py
+
+
+
+
+
+
+
+
+
+
